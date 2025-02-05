@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*font-family: "Pacifico", serif;
+font-family: "Poppins", serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", serif;
+    background-image: url(".//Assets/background.jpg");
+    background-size: cover;
+    backdrop-filter: blur(2px);
+
+}
+
+.box {
+    background-color: white;
+    width: 350px;
+    border-radius: 7px;
+
+}
+
+.box .head {
+    display: flex;
+    font-size: large;
+    font-weight: bold;
+    padding: 16px;
+    column-gap: 10px;
+    color: rgb(31, 31, 188);
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+
+.box .head i {
+    font-size: 0px;
+    cursor: pointer;
+}
+
+.box.active .head i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.box .input-part {
+    margin: 20px 25px 30px;
+
+}
+
+.box.active .input-part {
+    display: none;
+}
+
+.box .input-part p {
+    display: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 7px;
+    background: #c5deef;
+    color: #0f1010;
+}
+
+.box .input-part .info.error {
+    display: block;
+    color: #f2031b;
+    background-color: #ccc;
+
+}
+
+.box .input-part .info.pending {
+    display: block;
+    color: #0c5460;
+    background-color: #d1ecf1;
+
+}
+
+.box .input-part input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #bfbfbf;
+    border-radius: 7px;
+    text-align: center;
+    outline: none;
+}
+
+.box .input-part input:is(:focus, :valid) {
+    border: 2px solid black;
+}
+
+.box .input-part .seperator {
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seperator::before {
+    content: "veya";
+    background: white;
+    font-size: 15px;
+    padding: 0 10px;
+    color: #ccc;
+}
+
+.box .input-part button {
+    height: 40px;
+    width: 100%;
+    background-color: #43affc;
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.box .input-part .local {
+    margin: 5px 0;
+}
+
+.box .weather-part {
+    margin: 30px 0 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box.active .weather-part {
+    display: flex;
+}
+
+.weather-part img {
+    max-width: 125px;
+    margin-bottom: 10px;
+}
+
+.weather-part .temp {
+    display: flex;
+    font-size: 72px;
+    font-weight: 500;
+
+}
+
+.weather-part .temp .num {
+    font-weight: 600;
+}
+
+.weather-part .temp .deg {
+    font-size: 40px;
+    margin: 10px 5px 0 0;
+}
+
+.weather-part .weather {
+    margin-bottom: 10px;
+}
+
+.weather-part .location {
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    margin-bottom: 30px;
+    column-gap: 10px;
+}
+
+.weather-part .bottom-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #bfbfbf;
+    justify-content: space-between;
+
+}
+
+.weather-part .bottom-details .column {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    column-gap: 10px;
+}
+
+.column i {
+    color: #43affc;
+    font-size: 32px;
+}
+
+.column.feels {
+    border-right: 1px solid #bfbfbf;
+}
+
+.details .temp,
+.humidity span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.details .temp .deg {
+    margin: 0;
+    font-size: 17px;
+    padding: 0 2px 1px;
+}
