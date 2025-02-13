@@ -4,6 +4,7 @@ WEATHER WEBSİTE
 ![Ekran görüntüsü 2025-02-06 003213](https://github.com/user-attachments/assets/5d1c0775-11e4-4ad9-81ab-50891950771d)
 
 Website Document
-![screenshot](https://github.com/user-attachments/assets/410718d5-0c9f-4e4a-bc86-4bee5a519b04)
+
+![screenshot](https://github.com/user-attachments/assets/7d13fd5c-15c6-4899-8df7-9ac250e48dfa)
 
 
