@@ -5,6 +5,7 @@ WEATHER WEBSİTE
 
 Website Document
 
-![screenshot](https://github.com/user-attachments/assets/7d13fd5c-15c6-4899-8df7-9ac250e48dfa)
+
+![screenshot](https://github.com/user-attachments/assets/81f8914a-7ff7-449a-92f3-053b5e03727c)
 
 
